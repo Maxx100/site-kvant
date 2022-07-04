@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="banner_reg">
+    <div class="container">
+        <div class="bannerInner" style="padding-top: 0;">
+            <h2>Регистрация</h2>
+            <form action="" method="post">
+                {{ form.hidden_tag() }}
+                <p>
+                    {{ form.email.label }}<br>
+                    {{ form.email(class="form-control", type="email") }}<br>
+                    {% for error in form.email.errors %}
+                        <p class="alert alert-danger" role="alert">
+                            {{ error }}
+                        </p>
+                    {% endfor %}
+                </p>
+                <p>
+                    {{ form.password.label }}<br>
+                    {{ form.password(class="form-control", type="password") }}<br>
+                    {% for error in form.password.errors %}
+                        <p class="alert alert-danger" role="alert">
+                            {{ error }}
+                        </p>
+                    {% endfor %}
+                </p>
+                <p>
+                    {{ form.password_again.label }}<br>
+                    {{ form.password_again(class="form-control", type="password") }}<br>
+                    {% for error in form.password_again.errors %}
+                        <p class="alert alert-danger" role="alert">
+                            {{ error }}
+                        </p>
+                    {% endfor %}
+                </p>
+                <p>{{ form.submit(type="submit", class="btn btn-primary", style="border-radius: 4px; margin-top: 10px; --bs-btn-hover-bg: #012A77") }}</p>
+                <div  style="padding-bottom: 20px">{{message}}</div>
+            </form>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

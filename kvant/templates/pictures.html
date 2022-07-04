@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="banner">
+    <div class="container">
+        <div class="bannerInner">
+                <h2>Фотографии с последней смены</h2>
+    {% for item in pics %}
+        <p style="text-align:center"><img src={{item}} width="600" height="720"></p>
+    {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,431 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+    <div class="container">
+        <div class="bannerInner" style="padding-top: 0;">
+            <h1>ПРОФИЛЬНАЯ ШКОЛА «КВАНТ»</h1>
+            <p class="text">Летняя профильная школа «Квант» Казанского университета – одна из старейших физико-математических школ в России. Школа «Квант» была создана 1972 году и приняла первых 50 школьников – участников заочной физической школы. В 1973 году в её работе приняли участие призеры олимпиад по физике и математике.</p>
+        </div>
+    </div>
+</section>
+<!--<div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          </div>
+        </div>
+
+          <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          </div>
+        </div>
+
+          <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>-->
+<!-- Add images to <div class="fotorama"></div> -->
+<section style="padding-top: 50px;">
+    <div class="container">
+        <div class="fotorama border-bottom" style="width: 70%; margin: 0 auto">
+            {% for item in pics %}
+                <img src={{item}}>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="popit" >
+    <div class="container">
+        <div class="popitInner">
+            <h2>ПРОФИЛЬНАЯ ШКОЛА «КВАНТ»</h2>
+            <p class="more">Приглашаем школьников, заканчивающих 6–10 классы, увлеченных физикой, математикой и информатикой, участников олимпиад, конкурсов, конференций принять участие в программе Летней школы.
+                Для школьников предусмотрены три основных учебных занятия, где школьники знакомятся с современными достижениями естественных наук, узнают много нового и пробуют свои силы в решении нестандартных и оригинальных задач.
+                Планируется проведение циклов лекций и мастер классов от преподавателей и сотрудников Казанского федерального университета и других ведущих образовательных организаций и исследовательских институтов Казани.
+                Во второй половине дня ребят ждут разнообразные предметные факультативы, зрелищные демонстрационные опыты, кружки (фото, настольные игры, шахматы и др.), дискуссионные клубы, творческие конкурсы (рисовальный марафон, конкурс чтецов и др.), а также многочисленные спортивные мероприятия (волейбол, бадминтон, футбол, лапта, ринго, настольный теннис и др.).
+                Вечернее время посвящено культурно-массовым мероприятиям: дискотеки, концерты школьников и вожатых, конкурсы КВН, «Что? Где? Когда?», а также ставший традиционным песенный конкурс «Квантовидение».</p>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="grid-wrapper">
+        <p class="lab">Выбери лабораторию</p>
+        <div style="flex-direction: row; flex-wrap: wrap; justify-content: center; display: flex; flex-direction: row;">
+        <a href="http://127.0.0.1:8080/lab-phys68" style="padding: 20px">
+            <img class="product btn_footer" src="/static/img/icons/physics1.png">
+            <p class="more">ФИЗМАТ 6-8</p>
+        </a>
+        <a href="http://127.0.0.1:8080/lab-math" style="padding: 20px">
+            <img class="product btn_footer" src="/static/img/icons/math.png">
+            <p class="more">МАТЕМАТИКА 9-10</p>
+        </a>
+        <a href="http://127.0.0.1:8080/lab-phys910" style="padding: 20px">
+            <img class="product btn_footer" src="/static/img/icons/physics2.png">
+            <p class="more">ФИЗИКА 9-10</p>
+        </a>
+        <a href="http://127.0.0.1:8080/lab-inf" style="padding: 20px">
+            <img class="product btn_footer" src="/static/img/icons/informatics.png">
+            <p class="more">ИНФОРМАТИКА</p>
+        </a>
+            </div>
+        <!--<div class="grid">
+            <div class="grid-item">
+                <a href="#">
+                <img class="product btn_footer" src="/static/img/icons/physics1.png">
+                </a>
+                <p class="more">ФИЗМАТ 6-8</p>
+            </div>
+
+            <div class="grid-item">
+                <a href="#">
+                <img class="product btn_footer" src="/static/img/icons/math.png">
+                </a>
+                <p class="more">МАТЕМАТИКА 9-10</p>
+            </div>
+
+             <div class="grid-item">
+                <a href="#">
+                <img class="product btn_footer" src="/static/img/icons/physics2.png">
+                </a>
+                <p class="more">ФИЗИКА 9-10</p>
+            </div>
+
+            <div class="grid-item">
+                <a href="#">
+                <img class="product btn_footer" src="/static/img/icons/informatics.png">
+                </a>
+                <p class="more">ИНФОРМАТИКА</p>
+            </div>
+        </div>-->
+    </div>
+</section>
+<section style="width: 70%; margin: 0 auto">
+    <div class="timeline">
+        <h2 style="color: #012A77">Распорядок дня</h2>
+  <div class="outer">
+    <div class="card">
+      <div class="info first">
+        <h3 class="title">7:30</h3>
+        <p>Подъём</p>
+      </div>
+        <div class="card fourth">
+      <div class="info1">
+        <h3 class="title1">Время для умывания, чистки зубов!</h3>
+
+      </div>
+    </div>
+    </div>
+
+
+    <div class="card">
+      <div class="info first">
+        <h3 class="title">7:30-8:00</h3>
+        <p>Зарядка</p>
+      </div>
+        <div class="card fourth">
+      <div class="info1">
+        <h3 class="title1">Общая зарядка на свежем воздухе."</h3>
+
+      </div>
+    </div>
+    </div>
+    <div class="card">
+      <div class="info first">
+        <h3 class="title">8:00-9:00</h3>
+        <p>Завтрак. Уборка. Подготовка к занятиям.</p>
+      </div>
+        <div class="card fourth">
+      <div class="info1">
+        <h3 class="title1">Время для наивкуснейшего завтрака, а также для уборки в своей комнате.</h3>
+
+      </div>
+    </div>
+    </div>
+    <div class="card">
+      <div class="info first">
+        <h3 class="title">9:00 - 9:30</h3>
+        <p>Линейка</p>
+      </div>
+        <div class="card fourth">
+      <div class="info1">
+        <h3 class="title1">Cдача рапортов, а так же получение информации</h3>
+
+      </div>
+    </div>
+    </div>
+    <div class="card">
+      <div class="info first">
+        <h3 class="title">9:30 - 11:00</h3>
+        <p>Учебное занятие №1</p>
+      </div>
+        <div class="card fourth">
+      <div class="info1">
+        <h3 class="title1">Время получение знаний</h3>
+
+      </div>
+    </div>
+    </div>
+      <div class="card">
+      <div class="info first">
+        <h3 class="title">11:15 - 12:45</h3>
+        <p>Учебное занятие №2</p>
+      </div>
+          <div class="card fourth">
+      <div class="info1">
+        <h3 class="title1">Время получение знаний</h3>
+
+      </div>
+    </div>
+    </div>
+      <div class="card">
+      <div class="info first">
+        <h3 class="title">13:00 - 14:00</h3>
+        <p>Обед</p>
+      </div>
+          <div class="card fourth">
+      <div class="info1">
+        <h3 class="title1">Вкусные и горячие блюда ждут вас!</h3>
+
+      </div>
+    </div>
+    </div>
+      <div class="card">
+      <div class="info first">
+        <h3 class="title">14:30 - 16:00</h3>
+        <p>Учебное занятие №3</p>
+      </div>
+          <div class="card fourth">
+      <div class="info1">
+        <h3 class="title1">Время получение знаний</h3>
+
+      </div>
+    </div>
+    </div>
+      <div class="card">
+      <div class="info first">
+        <h3 class="title">16:15 - 18:45</h3>
+        <p>Факультативы. Турниры. Спортивные мероприятия</p>
+      </div>
+          <div class="card fourth">
+      <div class="info1">
+        <h3 class="title1">Время развлечений</h3>
+      </div>
+    </div>
+    </div>
+      <div class="card">
+      <div class="info first">
+        <h3 class="title">19:00 - 20:00</h3>
+        <p>Ужин</p>
+      </div>
+          <div class="card fourth">
+      <div class="info1">
+        <h3 class="title1">Последний приём пищи в конце дня</h3>
+
+      </div>
+    </div>
+    </div>
+      <div class="card">
+      <div class="info first">
+        <h3 class="title">20:30 - 22:00</h3>
+        <p>Концерты. КВН. Конкурсы. Вечерний кинозал</p>
+      </div>
+          <div class="card fourth">
+      <div class="info1">
+        <h3 class="title1">Время развлечений</h3>
+
+      </div>
+    </div>
+      </div>
+
+      <div class="card">
+      <div class="info first">
+        <h3 class="title">22:00 - 22:30</h3>
+        <p>Свечка</p>
+      </div>
+          <div class="card fourth">
+      <div class="info1">
+        <h3 class="title1">Время для признаний и откровенных историй</h3>
+      </div>
+    </div>
+      </div>
+          <div>
+      <div class="card">
+      <div class="info first">
+        <h3 class="title">23:00</h3>
+        <p>Отбой</p>
+      </div>
+          <div class="card fourth">
+      <div class="info1">
+        <h3 class="title1">Время сна</h3>
+
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+</section>
+<!--<section style="width: 70%; margin: 0 auto">
+    <div class="timeline">
+        <h2 style="color: #012A77">Распорядок дня</h2>
+  <div class="outer">
+    <div class="card">
+      <div class="info">
+        <h3 class="title">7:30</h3>
+        <p>Подъём</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="info">
+        <h3 class="title">7:30 - 8:00</h3>
+        <p>Зарядка</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="info">
+        <h3 class="title">8:00 – 9:00</h3>
+        <p>Завтрак. Уборка. Подготовка к занятиям.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="info">
+        <h3 class="title">9:00 - 9:30</h3>
+        <p>Линейка</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="info">
+        <h3 class="title">9:30 - 11:00</h3>
+        <p>Учебное занятие №1</p>
+      </div>
+    </div>
+      <div class="card">
+      <div class="info">
+        <h3 class="title">11:15 - 12:45</h3>
+        <p>Учебное занятие №2</p>
+      </div>
+    </div>
+      <div class="card">
+      <div class="info">
+        <h3 class="title">13:00 - 14:00</h3>
+        <p>Обед</p>
+      </div>
+    </div>
+      <div class="card">
+      <div class="info">
+        <h3 class="title">14:30 - 16:00</h3>
+        <p>Учебное занятие №3</p>
+      </div>
+    </div>
+      <div class="card">
+      <div class="info">
+        <h3 class="title">16:15 - 18:45</h3>
+        <p>Факультативы. Турниры. Спортивные мероприятия</p>
+      </div>
+    </div>
+      <div class="card">
+      <div class="info">
+        <h3 class="title">19:00 - 20:00</h3>
+        <p>Ужин</p>
+      </div>
+    </div>
+      <div class="card">
+      <div class="info">
+        <h3 class="title">20:30 - 22:00</h3>
+        <p>Концерты. КВН. Конкурсы. Вечерний кинозал</p>
+      </div>
+    </div>
+      <div class="card">
+      <div class="info">
+        <h3 class="title">22:00 - 22:30</h3>
+        <p>Свечка</p>
+      </div>
+    </div>
+      <div class="card">
+      <div class="info">
+        <h3 class="title">23:00</h3>
+        <p>Отбой</p>
+      </div>
+    </div>
+  </div>
+</div>-->
+     <!--<div class="container">
+        <div class="rules">
+            <div class="rules-inner">
+                <h2 class="list">Распорядок дня</h2>
+                <p class="rules-text raspanim">7:30	Подъём.</p>
+                <p class="rules-text raspanim">7:30 - 8:00	Зарядка.</p>
+                <p class="rules-text raspanim">8:00 – 9:00	Завтрак. Уборка. Подготовка к занятиям.
+                <p class="rules-text raspanim">9:00 - 9:30	Линейка</p>
+                <p class="rules-text raspanim">9:30 - 11:00	Учебное занятие №1.</p>
+                <p class="rules-text raspanim">11:15 - 12:45	Учебное занятие №2.</p>
+                <p class="rules-text raspanim">13:00 - 14:00	Обед</p>
+                <p class="rules-text raspanim">14:30 - 16:00	Учебное занятие №3.</p>
+                <p class="rules-text raspanim">16:15 - 18:45	Факультативы. Турниры. Спортивные мероприятия.</p>
+                <p class="rules-text raspanim">19:00 - 20:00	Ужин</p>
+                <p class="rules-text raspanim">20:30 - 22:00	Концерты. КВН. Конкурсы. Вечерний кинозал.</p>
+                <p class="rules-text raspanim">22:00 - 22:30	Свечка</p>
+                <p class="rules-text raspanim">23:00	Отбой</p>
+            </div>
+        </div>
+     </div>
+     -->
+</section>
+<!-- <main class="padding1">
+        <div class="mb-4 ">
+            <label for="exampleFormControlInput1" class="form-label padding2" lenght="600px">Фамилия</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Иванович">
+        </div>
+        <div class="mb-4 ">
+            <label for="exampleFormControlInput1" class="form-label padding2" lenght="600px">Имя</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Иван">
+        </div>
+        <div class="mb-4 ">
+            <label for="exampleFormControlInput1" class="form-label padding2" lenght="600">Отчество</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Иванов">
+        </div>
+        <div class="mb-4">
+            <label for="exampleFormControlInput1" class="form-label padding2" lenght="600">Почта</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@name.com">
+        </div>
+
+        <a class="btn btn-primary" href="http://127.0.0.1:8080/kvant" role="button">Оставить Заявку</a>
+</main> -->
+{% endblock %}
